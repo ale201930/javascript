@@ -33,3 +33,6 @@ console.log(`la resta de ${n1} mas ${n2} es igual a ${n1 - n2}`);
 console.log(`la multiplicacion de ${n1} mas ${n2} es igual a ${n1 * n2}`);
 
 console.log(`la division de ${n1} mas ${n2} es igual a ${n1 / n2}`);
+
+
+
