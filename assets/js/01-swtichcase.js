@@ -12,21 +12,53 @@ switch (true) {
         break;
 }
 
-var ciudad = "ortiz";
-switch (true){
-    case ciudad== "caracas":
-    console.log("soy de caracas");
-    break; //palabra reservada para romper el switch
+var ciudad = "caracas";
 
-    case ciudad== "brasilia":
-    console.log("soy de brasilia");
-    break;
-    case cuidad== "madrid":
-    console.log("soy de madrid");
-    break;
-    case cuidad== ciudad:
-    console.log("jjjjj");
-    break;
+switch (true){
+    case ciudad == "caracas":
+        console.log("soy de caracas");
+        break;
+
+    case ciudad == "brasilia":
+        console.log("soy de brasilia");
+        break;
+
+    case ciudad == "madrid":
+        console.log("soy de madrid");
+        break;
+
+    default:
+        console.log("ciudad no reconocida");
 }
 
 // en caso sea de caracas diga soy caraque; o en caso sea madri soy madrice;
+
+var usuario = "alex";
+var password = "1234";
+var rol = "admin";
+
+switch (true) {
+
+    case usuario === "" || password === "":
+        console.log("Debe ingresar usuario y contraseña");
+        break;
+
+    case usuario !== "alex" || password !== "1234":
+        console.log("Usuario o contraseña incorrectos");
+        break;
+
+    case rol === "administrador":
+        console.log("Bienvenido Administrador, tienes acceso total");
+        break;
+
+    case rol === "inspector":
+        console.log("Bienvenido Inspector, puedes revisar registros");
+        break;
+
+    case rol === "recursos humanos":
+        console.log("Bienvenido Recursos Humanos, puedes gestionar empleados");
+        break;
+
+    default:
+        console.log("Rol no válido");
+}
