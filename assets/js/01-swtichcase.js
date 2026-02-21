@@ -17,7 +17,7 @@ var ciudad = "caracas";
 switch (true){
     case ciudad == "caracas":
         console.log("soy de caracas");
-        break;
+        break; //palabra reservada para romper el switch
 
     case ciudad == "brasilia":
         console.log("soy de brasilia");
@@ -34,31 +34,27 @@ switch (true){
 // en caso sea de caracas diga soy caraque; o en caso sea madri soy madrice;
 
 var usuario = "alex";
-var password = "1234";
-var rol = "admin";
+var password = "123";
+var rol = "administrador";
 
 switch (true) {
 
-    case usuario === "" || password === "":
-        console.log("Debe ingresar usuario y contraseña");
+    case usuario === "" &&  password === "" &&  rol === "":
+        console.log("Debe ingresar usuario, contraseña y validar rol");
+        break; //palabra reservada para romper el switch
+
+    case usuario !== "alex" &&  password !== "1234" && rol === "administrador":
+        console.log(" Bienvenido administrador, acceso total del sistema");
         break;
 
-    case usuario !== "alex" || password !== "1234":
-        console.log("Usuario o contraseña incorrectos");
+    case usuario !== "alex" &&  password !== "123" && rol === "inspector":
+        console.log(" Bienvenido inspector, puedes ingresar la asistencia ");
         break;
-
-    case rol === "administrador":
-        console.log("Bienvenido Administrador, tienes acceso total");
-        break;
-
-    case rol === "inspector":
-        console.log("Bienvenido Inspector, puedes revisar registros");
-        break;
-
-    case rol === "recursos humanos":
-        console.log("Bienvenido Recursos Humanos, puedes gestionar empleados");
+    
+    case usuario !== "alex" &&  password !== "12" && rol === "recursos humanos":
+        console.log(" Bienvenido recuros humanos, puede ingresar el registro del personal ");
         break;
 
     default:
-        console.log("Rol no válido");
+        console.log("Rol no válido, datos incorrectos");
 }
