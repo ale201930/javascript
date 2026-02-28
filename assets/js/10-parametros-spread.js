@@ -6,6 +6,6 @@ function listadoFrutas(fruta1, fruta2, ...todasfrutas) {
 // parametros rest
 listadoFrutas("fresa", "cambur", "patilla", "durazno");
 
-var frutas2 = ["mango", "uvas", "kiwi",]; //array
+var frutas2 = ["mango", "uvas", "kiwi"]; //array
 // parametros spread // convierto un arreglo en un parametro
 listadoFrutas(...frutas2, "fresa", "cambur", "patilla");
