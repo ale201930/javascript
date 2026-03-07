@@ -92,5 +92,8 @@ console.log(telefono);
 console.log(correo);
 console.log(presencial);
 
-medico.descripcion =` aprende desde cero a programar`
+medico.descripcion =` aprende desde cero a programar` // agrego nuevas propiedades a mi objeto
+console.log(medico);
+
+delete medico.nombre; // elimino una propiedad del objeto
 console.log(medico);
