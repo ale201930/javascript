@@ -20,3 +20,23 @@ var compras2 =prompt(
     0,
 );
 console.log(`haz agregado al carrito el producto con el id ${compras2}`);
+
+
+
+
+
+//otro
+
+var total = 0;
+function agregarcarrito(precio) {
+    return (impuesto = total+= precio); 
+}
+function calcularimpuesto(total) {
+    return (impuesto = total * 1.16); // cada ves
+}
+total = agregarcarrito(300);
+agregarcarrito(600);
+agregarcarrito(1200);
+impuesto = calcularimpuesto(total);
+console.log(`el total de tu compra es ${total} y con impuestos es ${impuesto}`);
+// document.write(`el total a pagar es ${total} y el total mas el impuesto es ${impuesto}`);
