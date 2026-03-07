@@ -20,4 +20,4 @@ for (var i=0; i <frutas.length; i++){
     console.log(frutas[i]);
 }
 const frutas2 = [`mango`, `peras`];
-console.log(frutas2,...frutas);
+console.log(...frutas2,frutas);
