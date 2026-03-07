@@ -15,3 +15,8 @@ function mostrarcatalogo(catalago) {
         console.log(catalago[i]); 
     }
 }
+var compras2 =prompt(
+    "ingrese un id del producto a comprar entre: 0,1 y 2",
+    0,
+);
+console.log(`haz agregado al carrito el producto con el id ${compras2}`);
