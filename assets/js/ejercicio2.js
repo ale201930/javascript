@@ -2,10 +2,10 @@ var Opcion = prompt('Deseas registrar notas del estudiante? (si/no)', 'si');
 
 
 const Materias = [ 
-    {Id: 1, Nombre: "Matematica", Nota: 0},
-    {Id: 2, Nombre: "Programacion", Nota: 0},
-    {Id: 3, Nombre: "Base de Datos", Nota: 0},
-    {Id: 4, Nombre: "Redes", Nota: 0}    
+    {Id: 1, Nombre: "arte", Nota: 0},
+    {Id: 2, Nombre: "cultura", Nota: 0},
+    {Id: 3, Nombre: "ciencias", Nota: 0},
+    {Id: 4, Nombre: "electiva", Nota: 0}    
 ];
 
 
@@ -28,7 +28,7 @@ function Registrar_Nota(){
     if(Materia_Seleccionada){
 
         if(Materia_Seleccionada.Nota !== 0){
-            console.log("⚠️ Esa materia ya tiene una nota registrada");
+            console.log(" Esa materia ya tiene una nota registrada");
         } else {
 
             var Nota = parseFloat(prompt('Ingrese la nota', 0));
@@ -43,7 +43,7 @@ function Registrar_Nota(){
         }
 
     } else {
-        console.log("❌ Id no valido");
+        console.log(" Id no valido");
     }
 }
 
@@ -94,9 +94,9 @@ if(Opcion == "si"){
 
    
     if(Promedio >= 10){
-        console.log("✅ El estudiante APROBO");
+        console.log(" El estudiante APROBO");
     } else {
-        console.log("❌ El estudiante REPROBO");
+        console.log(" El estudiante REPROBO");
     }
 
 } else {
